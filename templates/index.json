@@ -23,7 +23,7 @@
       "settings": {
         "full_width": false,
         "stack_collections": false,
-        "collections_per_row": 6,
+        "collections_per_row": 5,
         "show_progress_bar": false,
         "subheading": "Categories",
         "title": "Shop by category",
