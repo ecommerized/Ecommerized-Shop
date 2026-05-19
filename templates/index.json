@@ -1,1 +1,88 @@
-{"sections":{"featured_collection_RxfxyY":{"type":"featured-collection","disabled":true,"settings":{"collection":"","products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_count":6,"products_per_row_mobile":"2","products_per_row_desktop":4,"subheading":"","title":"OUR TRENDY PRODUCT","content":"","link_url":"shopify:\/\/collections\/new-in-h-boutique","link_text":"View all","background":"","background_gradient":"","text_color":"","heading_color":"#945f4a","heading_gradient":"","product_card_background":"","product_card_text_color":""}},"slideshow_Rqkqpq":{"type":"slideshow","blocks":{"image_VdntWz":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/h_Boutique.png","mobile_image":"shopify:\/\/shop_images\/WhatsApp_Image_2024-08-25_at_21.59.52_6bb0dc3e.jpg","content_max_width":780,"mobile_text_position":"place-self-end-center text-center","desktop_text_position":"sm:place-self-end-center sm:text-center","subheading":"","title":"Hboutique","heading_tag":"h1","button_text":"Shop Now","button_link":"shopify:\/\/collections\/all","text_color":"#ffffff","button_background":"#ffffff","button_text_color":"#000000","overlay_color":"#000000","overlay_opacity":30,"background":"","background_gradient":""}}},"block_order":["image_VdntWz"],"settings":{"full_width":true,"allow_transparent_header":false,"image_size":"auto","controls_type":"dots","transition_type":"fade_with_text","autoplay":false,"cycle_speed":6,"background":"#f2f2f2","background_gradient":""}},"featured_collection_Y9kKPG":{"type":"featured-collection","settings":{"collection":"best-seller","products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_count":4,"products_per_row_mobile":"2","products_per_row_desktop":4,"subheading":"","title":"Best Seller","content":"","link_url":"","link_text":"View all","background":"","background_gradient":"","text_color":"#000000","heading_color":"#000000","heading_gradient":"","product_card_background":"","product_card_text_color":""}},"featured_collection_WY6wiG":{"type":"featured-collection","settings":{"collection":"new-in-h-boutique","products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_count":4,"products_per_row_mobile":"2","products_per_row_desktop":4,"subheading":"","title":"New in H Boutique","content":"","link_url":"","link_text":"View all","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","product_card_background":"","product_card_text_color":""}},"slideshow_VC3wtT":{"type":"slideshow","blocks":{"image_z8MiNg":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/h_Boutique2.png","mobile_image":"shopify:\/\/shop_images\/h_Boutique_01.png","content_max_width":780,"mobile_text_position":"place-self-center text-center","desktop_text_position":"sm:place-self-center sm:text-center","subheading":"","title":"","heading_tag":"h0","button_text":"","button_link":"","text_color":"#ffffff","button_background":"#ffffff","button_text_color":"#000000","overlay_color":"#000000","overlay_opacity":30,"background":"","background_gradient":""}}},"block_order":["image_z8MiNg"],"settings":{"full_width":true,"allow_transparent_header":true,"image_size":"auto","controls_type":"dots","transition_type":"fade_with_text","autoplay":false,"cycle_speed":6,"background":"#f2f2f2","background_gradient":""}},"featured_collection_Kzg3fW":{"type":"featured-collection","settings":{"collection":"all","products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_count":4,"products_per_row_mobile":"2","products_per_row_desktop":4,"subheading":"","title":"May You Also Like","content":"","link_url":"","link_text":"View all","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","product_card_background":"","product_card_text_color":""}}},"order":["featured_collection_RxfxyY","slideshow_Rqkqpq","featured_collection_Y9kKPG","featured_collection_WY6wiG","slideshow_VC3wtT","featured_collection_Kzg3fW"]}
+{
+  "sections": {
+    "hero": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-hero\"><div class=\"ecom-hero__glow\"></div><div class=\"ecom-hero__inner\"><div style=\"display:grid;gap:2.5rem;align-items:center\" class=\"ecom-hero__grid\"><div><span class=\"ecom-hero__eyebrow\">UAE&rsquo;s ecommerce shop &middot; Ships from Dubai</span><h1>Ship faster.<span class=\"ecom-hero__accent\">Sell smarter.</span></h1><p>Printers, labels, packaging and POS &mdash; hand-picked for UAE sellers. Same-day dispatch from Dubai.</p><div style=\"display:flex;gap:.75rem;flex-wrap:wrap\"><a class=\"ecom-btn\" href=\"/collections/all\">Shop all products &rarr;</a><a class=\"ecom-btn\" style=\"background:rgba(255,255,255,.06);box-shadow:none\" href=\"https://wa.me/971585788586\" target=\"_blank\" rel=\"noopener\">Chat on WhatsApp</a></div><div style=\"display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.5rem\"><span style=\"display:inline-flex;align-items:center;gap:.375rem;padding:.375rem .75rem;border-radius:9999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);font-size:12px;font-weight:600;color:#fff\">&#9733; Free shipping over AED 200</span><span style=\"display:inline-flex;align-items:center;gap:.375rem;padding:.375rem .75rem;border-radius:9999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);font-size:12px;font-weight:600;color:#fff\">Same-day dispatch from Dubai</span></div></div><div class=\"ecom-hero__media\" style=\"position:relative;min-height:340px\">{%- assign hp = collections.all.products -%}{%- for p in hp limit: 3 -%}<div style=\"position:absolute;background:#fff;border-radius:16px;box-shadow:0 25px 50px -12px rgba(0,0,0,.5);padding:1.25rem;{% cycle 'top:0;left:6%;width:14rem;height:14rem;transform:rotate(-6deg);z-index:30', 'top:18%;right:6%;width:12rem;height:12rem;transform:rotate(8deg);z-index:20', 'bottom:4%;left:24%;width:13rem;height:13rem;transform:rotate(3deg);z-index:10' %}\"><img src=\"{{ p.featured_image | image_url: width: 400 }}\" alt=\"{{ p.title | escape }}\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:contain\"></div>{%- endfor -%}</div></div></div></div><style>@media(min-width:1024px){.ecom-hero__grid{grid-template-columns:1fr 1fr}}@media(max-width:1023px){.ecom-hero__media{display:none}}</style>"
+      }
+    },
+    "trustbar": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-trustbar\"><div class=\"ecom-trustbar__grid\"><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#128666;</div><div><div class=\"ecom-trust-item__title\">Same-day dispatch</div><div class=\"ecom-trust-item__body\">From Dubai before 2pm</div></div></div><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#128230;</div><div><div class=\"ecom-trust-item__title\">Free shipping</div><div class=\"ecom-trust-item__body\">On orders over AED 200</div></div></div><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#8634;</div><div><div class=\"ecom-trust-item__title\">30-day returns</div><div class=\"ecom-trust-item__body\">No restocking fees</div></div></div><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#128179;</div><div><div class=\"ecom-trust-item__title\">Pay in 4</div><div class=\"ecom-trust-item__body\">Tabby &amp; Tamara</div></div></div></div></div>"
+      }
+    },
+    "categories": {
+      "type": "collection-list",
+      "settings": {
+        "full_width": false,
+        "stack_collections": false,
+        "collections_per_row": 6,
+        "show_progress_bar": false,
+        "subheading": "Categories",
+        "title": "Shop by category",
+        "content": "",
+        "link_url": "shopify://collections/all",
+        "link_text": "View all",
+        "background": "",
+        "text_color": "",
+        "heading_color": "#0B0F1A"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "Best sellers",
+        "title": "What our customers are buying",
+        "content": "",
+        "link_url": "shopify://collections/all",
+        "link_text": "View all",
+        "background": "",
+        "text_color": "",
+        "heading_color": "#0B0F1A"
+      }
+    },
+    "whyus": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-band\"><div class=\"ecom-hero__glow\" style=\"width:400px;height:400px;filter:blur(140px)\"></div><div class=\"ecom-band__inner\"><div style=\"display:grid;gap:2.5rem\" class=\"ecom-whyus__grid\"><div><div style=\"font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#E25D54;margin-bottom:.75rem\">Why Ecommerized Shop</div><h2>A shop run by people who pack their own orders.</h2><p style=\"color:rgba(255,255,255,.60);margin-top:1rem;font-size:1rem\">Every product is something our agency team uses on real client packing benches. We don&rsquo;t carry SKUs we wouldn&rsquo;t recommend.</p></div><div style=\"display:grid;grid-template-columns:repeat(2,1fr);gap:1rem\" class=\"ecom-whyus__tiles\"><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#9889;</div><div class=\"ecom-tile__title\">Same-day dispatch</div><div class=\"ecom-tile__body\">Orders before 2pm Dubai time ship the same business day.</div></div><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#128230;</div><div class=\"ecom-tile__title\">Hand-picked stock</div><div class=\"ecom-tile__body\">Tested in the field by an ecommerce agency, not drop-shipped.</div></div><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#128737;</div><div class=\"ecom-tile__title\">Secure &amp; local</div><div class=\"ecom-tile__body\">UAE-VAT paid, Shopify-hosted checkout, PCI-compliant.</div></div><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#128172;</div><div class=\"ecom-tile__title\">Real WhatsApp support</div><div class=\"ecom-tile__body\">A human on WhatsApp within minutes, six days a week.</div></div></div></div></div></div><style>@media(min-width:1024px){.ecom-whyus__grid{grid-template-columns:1fr 2fr}}</style>"
+      }
+    },
+    "finalcta": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-section\"><div style=\"border-radius:24px;background:linear-gradient(135deg,#fff,#F9FAFB);border:1px solid #F3F4F6;padding:2rem;display:grid;gap:2rem;align-items:center\" class=\"ecom-finalcta\"><div><div style=\"font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#E25D54;margin-bottom:.5rem\">Not sure what you need?</div><h2 style=\"font-size:1.875rem;font-weight:800;color:#0B0F1A;margin:0;letter-spacing:-.02em\">Let us help you pick.</h2><p style=\"color:#4B5563;margin-top:.75rem;font-size:1rem;line-height:1.6\">Tell us what you ship and how often. We&rsquo;ll recommend the printer, labels, and packaging that&rsquo;ll fit your bench &mdash; no upsell, just a straight answer.</p></div><div style=\"display:flex;gap:.75rem;flex-wrap:wrap\"><a class=\"ecom-btn\" style=\"background:#25D366;box-shadow:none\" href=\"https://wa.me/971585788586\" target=\"_blank\" rel=\"noopener\">Chat on WhatsApp</a><a class=\"ecom-btn\" href=\"/collections/all\">Browse all products &rarr;</a></div></div></div><style>@media(min-width:1024px){.ecom-finalcta{grid-template-columns:1fr 1fr;padding:3rem}}</style>"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trustbar",
+    "categories",
+    "bestsellers",
+    "whyus",
+    "finalcta"
+  ]
+}
