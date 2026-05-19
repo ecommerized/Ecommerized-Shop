@@ -1,1 +1,73 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","settings":{}},"title":{"type":"title","settings":{"heading_tag":"h2"}},"badges":{"type":"badges","settings":{}},"price":{"type":"price","settings":{"show_taxes_notice":false}},"rating":{"type":"rating","settings":{"show_empty":false}},"payment_terms":{"type":"payment_terms","settings":{}},"separator":{"type":"separator","settings":{}},"description":{"type":"description","settings":{"collapse_content":false}},"variant_picker":{"type":"variant_picker","settings":{"hide_sold_out_variants":false,"stack_blocks":true,"selector_mode":"block","color_mode":"color","size_chart_page":""}},"quantity_selector":{"type":"quantity_selector","settings":{}},"liquid_piUYDk":{"type":"liquid","settings":{"liquid":"{% render 'tabby-installments'%}"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_payment_button":true,"show_gift_card_recipient":true,"atc_button_background":"","atc_button_text_color":"#ffffff","payment_button_background":"#dd1d1d","payment_button_text_color":""}}},"block_order":["vendor","title","badges","price","rating","payment_terms","separator","description","variant_picker","quantity_selector","liquid_piUYDk","buy_buttons"],"settings":{"full_width":true,"show_fixed_add_to_cart":true,"desktop_media_width":55,"desktop_media_layout":"carousel_thumbnails_left","mobile_media_size":"expanded","mobile_carousel_control":"floating_dots","enable_video_autoplay":false,"enable_video_looping":true,"enable_image_zoom":true,"max_image_zoom_level":3,"background":"","background_gradient":"","text_color":"","input_background":"rgba(0,0,0,0)","input_text_color":""}},"related-products":{"type":"related-products","settings":{"recommendations_count":4,"products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_per_row_mobile":"2","products_per_row_desktop":4,"subheading":"","title":"You may also like","content":"","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","product_card_background":"","product_card_text_color":""}}},"order":["main","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": { "type": "vendor", "settings": {} },
+        "title": { "type": "title", "settings": { "heading_tag": "h2" } },
+        "badges": { "type": "badges", "settings": {} },
+        "price": { "type": "price", "settings": { "show_taxes_notice": false } },
+        "rating": { "type": "rating", "settings": { "show_empty": false } },
+        "payment_terms": { "type": "payment_terms", "settings": {} },
+        "separator": { "type": "separator", "settings": {} },
+        "description": { "type": "description", "settings": { "collapse_content": false } },
+        "variant_picker": { "type": "variant_picker", "settings": { "hide_sold_out_variants": false, "stack_blocks": true, "selector_mode": "block", "color_mode": "color", "size_chart_page": "" } },
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "liquid_piUYDk": { "type": "liquid", "settings": { "liquid": "{% render 'tabby-installments'%}" } },
+        "buy_buttons": { "type": "buy_buttons", "settings": { "show_payment_button": true, "show_gift_card_recipient": true, "atc_button_background": "", "atc_button_text_color": "#ffffff", "payment_button_background": "#dd1d1d", "payment_button_text_color": "" } }
+      },
+      "block_order": ["vendor", "title", "badges", "price", "rating", "payment_terms", "separator", "description", "variant_picker", "quantity_selector", "liquid_piUYDk", "buy_buttons"],
+      "settings": { "full_width": true, "show_fixed_add_to_cart": true, "desktop_media_width": 55, "desktop_media_layout": "carousel_thumbnails_left", "mobile_media_size": "expanded", "mobile_carousel_control": "floating_dots", "enable_video_autoplay": false, "enable_video_looping": true, "enable_image_zoom": true, "max_image_zoom_level": 3, "background": "", "background_gradient": "", "text_color": "", "input_background": "rgba(0,0,0,0)", "input_text_color": "" }
+    },
+    "pdp_trust": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-trustbar\"><div class=\"ecom-trustbar__grid\"><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#128666;</div><div><div class=\"ecom-trust-item__title\">Ships in 24h</div><div class=\"ecom-trust-item__body\">Same-day dispatch from Dubai</div></div></div><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#8634;</div><div><div class=\"ecom-trust-item__title\">30-day returns</div><div class=\"ecom-trust-item__body\">No restocking fees</div></div></div><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#128737;</div><div><div class=\"ecom-trust-item__title\">Secure checkout</div><div class=\"ecom-trust-item__body\">Shopify-hosted, PCI-compliant</div></div></div><div class=\"ecom-trust-item\"><div class=\"ecom-trust-item__icon\">&#128179;</div><div><div class=\"ecom-trust-item__title\">Pay in 4</div><div class=\"ecom-trust-item__body\">Tabby &amp; Tamara at checkout</div></div></div></div></div>"
+      }
+    },
+    "pdp_why": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div style=\"background:#F9FAFB;border-top:1px solid #F3F4F6;border-bottom:1px solid #F3F4F6\"><div class=\"ecom-section\" style=\"padding-top:3.5rem;padding-bottom:3.5rem\"><div style=\"text-align:center;max-width:42rem;margin:0 auto\"><div style=\"font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#E25D54;margin-bottom:.75rem\">Why you&rsquo;ll love it</div><h2 style=\"font-size:1.875rem;font-weight:800;color:#0B0F1A;margin:0;letter-spacing:-.02em\">Built for the way you actually ship.</h2></div><div style=\"display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.5rem\" class=\"ecom-why-grid\"><div style=\"padding:1.5rem;border-radius:16px;background:#fff;border:1px solid #F3F4F6\"><div class=\"ecom-trust-item__icon\" style=\"margin-bottom:1rem\">&#9889;</div><div style=\"font-size:.875rem;font-weight:800;color:#0B0F1A\">Fast everyday use</div><div style=\"font-size:.875rem;color:#4B5563;margin-top:.5rem;line-height:1.6\">Picked because it holds up on a real packing bench, day after day.</div></div><div style=\"padding:1.5rem;border-radius:16px;background:#fff;border:1px solid #F3F4F6\"><div class=\"ecom-trust-item__icon\" style=\"margin-bottom:1rem\">&#128230;</div><div style=\"font-size:.875rem;font-weight:800;color:#0B0F1A\">Ready to go</div><div style=\"font-size:.875rem;color:#4B5563;margin-top:.5rem;line-height:1.6\">Arrives quickly from our Dubai warehouse, properly packed.</div></div><div style=\"padding:1.5rem;border-radius:16px;background:#fff;border:1px solid #F3F4F6\"><div class=\"ecom-trust-item__icon\" style=\"margin-bottom:1rem\">&#128737;</div><div style=\"font-size:.875rem;font-weight:800;color:#0B0F1A\">Backed by support</div><div style=\"font-size:.875rem;color:#4B5563;margin-top:.5rem;line-height:1.6\">Real WhatsApp help if anything isn&rsquo;t right &mdash; six days a week.</div></div><div style=\"padding:1.5rem;border-radius:16px;background:#fff;border:1px solid #F3F4F6\"><div class=\"ecom-trust-item__icon\" style=\"margin-bottom:1rem\">&#8634;</div><div style=\"font-size:.875rem;font-weight:800;color:#0B0F1A\">Easy returns</div><div style=\"font-size:.875rem;color:#4B5563;margin-top:.5rem;line-height:1.6\">30 days, no restocking fees, no hassle.</div></div></div></div></div><style>@media(min-width:1024px){.ecom-why-grid{grid-template-columns:repeat(4,1fr)}}</style>"
+      }
+    },
+    "pdp_usecases": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-band\"><div class=\"ecom-band__inner\"><div style=\"text-align:center;max-width:42rem;margin:0 auto\"><div style=\"font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#E25D54;margin-bottom:.75rem\">Built for these jobs</div><h2>The use cases we see most often.</h2></div><div style=\"display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.5rem\" class=\"ecom-uc-grid\"><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#128230;</div><div class=\"ecom-tile__title\">Daily order fulfilment</div><div class=\"ecom-tile__body\">Keeps a busy packing bench moving without slowing down.</div></div><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#127970;</div><div class=\"ecom-tile__title\">Small business ops</div><div class=\"ecom-tile__body\">Reliable enough to depend on, simple enough for any team member.</div></div><div class=\"ecom-tile\"><div class=\"ecom-tile__icon\">&#128666;</div><div class=\"ecom-tile__title\">Scaling shipping volume</div><div class=\"ecom-tile__body\">Built to handle more orders as you grow, not less.</div></div></div></div></div><style>@media(min-width:768px){.ecom-uc-grid{grid-template-columns:repeat(3,1fr)}}</style>"
+      }
+    },
+    "pdp_faq": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div style=\"background:#F9FAFB;border-top:1px solid #F3F4F6;border-bottom:1px solid #F3F4F6\"><div class=\"ecom-section\" style=\"max-width:48rem;padding-top:3.5rem;padding-bottom:3.5rem\"><div style=\"text-align:center;margin-bottom:2rem\"><div style=\"font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#E25D54;margin-bottom:.75rem\">FAQ</div><h2 style=\"font-size:1.875rem;font-weight:800;color:#0B0F1A;margin:0;letter-spacing:-.02em\">Frequently asked questions.</h2></div><div style=\"border-radius:16px;border:1px solid #F3F4F6;background:#fff;overflow:hidden\"><details style=\"border-bottom:1px solid #F3F4F6\"><summary style=\"padding:1rem 1.25rem;font-size:.875rem;font-weight:700;color:#0B0F1A;cursor:pointer;list-style:none\">How fast will I get my order?</summary><div style=\"padding:0 1.25rem 1.25rem;font-size:.875rem;color:#4B5563;line-height:1.6\">Orders placed before 2pm Dubai time ship the same day. Dubai usually delivers within 24 hours; the rest of the UAE in 24&ndash;72 hours. Tracking goes out by email and SMS.</div></details><details style=\"border-bottom:1px solid #F3F4F6\"><summary style=\"padding:1rem 1.25rem;font-size:.875rem;font-weight:700;color:#0B0F1A;cursor:pointer;list-style:none\">What&rsquo;s your return policy?</summary><div style=\"padding:0 1.25rem 1.25rem;font-size:.875rem;color:#4B5563;line-height:1.6\">30 days from delivery, in original condition and packaging. No restocking fees. Email support@ecommerized.com to start.</div></details><details><summary style=\"padding:1rem 1.25rem;font-size:.875rem;font-weight:700;color:#0B0F1A;cursor:pointer;list-style:none\">Can I pay in instalments?</summary><div style=\"padding:0 1.25rem 1.25rem;font-size:.875rem;color:#4B5563;line-height:1.6\">Yes &mdash; Tabby and Tamara are available at checkout, splitting your order into 4 interest-free payments.</div></details></div><div style=\"text-align:center;margin-top:1.5rem\"><a href=\"/pages/contact\" style=\"color:#E25D54;font-weight:700;font-size:.875rem;text-decoration:none\">Still have questions? Contact our team &rarr;</a></div></div></div>"
+      }
+    },
+    "pdp_cta": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"ecom-section\"><div style=\"position:relative;overflow:hidden;border-radius:24px;background:linear-gradient(135deg,#0B0F1A,#1a1f2e);color:#fff;padding:2rem\" class=\"ecom-pdpcta\"><div class=\"ecom-hero__glow\" style=\"width:380px;height:380px;filter:blur(120px)\"></div><div style=\"position:relative;display:grid;gap:1.5rem;align-items:center\" class=\"ecom-pdpcta__grid\"><div><div style=\"font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#E25D54;margin-bottom:.5rem\">Ready to order?</div><h2 style=\"font-size:1.5rem;font-weight:800;margin:0\">{{ product.title | escape }}</h2><p style=\"color:rgba(255,255,255,.70);margin-top:.5rem;font-size:1rem\">Ships same-day from Dubai when you order before 2pm.</p></div><div><a href=\"#\" onclick=\"document.querySelector('[name=add],button[type=submit]')?.scrollIntoView({behavior:'smooth',block:'center'});return false;\" class=\"ecom-btn\" style=\"width:100%;justify-content:center\">Add to cart &mdash; {{ product.price | money }}</a></div></div></div></div><style>@media(min-width:1024px){.ecom-pdpcta{padding:3rem}.ecom-pdpcta__grid{grid-template-columns:2fr 1fr}}</style>"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": { "recommendations_count": 4, "products": [], "full_width": true, "stack_products": true, "show_progress_bar": false, "products_per_row_mobile": "2", "products_per_row_desktop": 4, "subheading": "", "title": "You may also like", "content": "", "background": "", "background_gradient": "", "text_color": "", "heading_color": "", "heading_gradient": "", "product_card_background": "", "product_card_text_color": "" }
+    }
+  },
+  "order": ["main", "pdp_trust", "pdp_why", "pdp_usecases", "pdp_faq", "pdp_cta", "related-products"]
+}
