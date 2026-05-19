@@ -66,6 +66,40 @@
   color: rgba(226,93,84,.80);
 }
 
+/* ---- Closer to React ProductCard: tighter card, "View details" hover
+        chip, coral cart affordance, contained image well ------------------- */
+.product-card, .card--product {
+  overflow: hidden;
+}
+.product-card__media, .card--product .card__media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+/* fade-in "View details" chip on hover (React parity) */
+.product-card__media::after, .card--product .card__media::after {
+  content: "View details";
+  position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%) translateY(8px);
+  background: rgba(255,255,255,.95); color: #0B0F1A;
+  font-size: 11px; font-weight: 700; padding: 6px 14px; border-radius: 9999px;
+  box-shadow: 0 8px 16px -4px rgba(0,0,0,.18);
+  opacity: 0; transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none; white-space: nowrap;
+}
+@media (pointer: fine) {
+  .product-card:hover .product-card__media::after,
+  .card--product:hover .card__media::after {
+    opacity: 1; transform: translateX(-50%) translateY(0);
+  }
+}
+/* tighter card body + coral price + uppercase vendor (React look) */
+.product-card__info, .card--product .card__content { padding: 1rem; }
+.product-card__title, .card--product .card__heading {
+  font-size: .875rem; font-weight: 600; line-height: 1.35;
+}
+.price, .price-item, .card--product .price {
+  font-weight: 800; color: var(--ecom-text);
+}
+
 /* ---- Buttons: coral primary with the React hover (darker coral) ----------- */
 .button--primary,
 .button[data-variant="primary"],
