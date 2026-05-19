@@ -142,9 +142,22 @@ button[name="checkout"] {
 .header__menu-item.is-active,
 .header__inline-menu a:hover { color: var(--ecom-coral); }
 
-/* ---- Footer: dark navy (React footer) ------------------------------------ */
-.footer { background: var(--ecom-navy); }
+/* ---- Footer: dark navy + proper spacing (React footer) ------------------- */
+.footer { background: var(--ecom-navy); padding-top: 3rem; padding-bottom: 2rem; }
 .footer a:hover { color: #fff; }
+.footer__blocks,
+.footer .footer__content { gap: 2.5rem; row-gap: 2.5rem; }
+.footer .text-block,
+.footer__block { line-height: 1.7; }
+.footer .text-block p,
+.footer__block p { margin: 0 0 .75rem; color: rgba(255,255,255,.65); }
+.footer .text-block strong { color: #fff; }
+.footer__block-title,
+.footer h3, .footer h4 {
+  text-transform: uppercase; letter-spacing: .06em;
+  font-size: 12px; font-weight: 700; color: #fff; margin-bottom: 1rem;
+}
+.footer__bottom { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.08); }
 
 /* ---- Inputs: rounded, coral focus ring ----------------------------------- */
 .field input,
