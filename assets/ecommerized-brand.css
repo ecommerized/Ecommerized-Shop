@@ -1,0 +1,256 @@
+/* ============================================================================
+   Ecommerized brand overlay — aligns the Impact theme toward the
+   shop.ecommerized.com React storefront look. Loaded AFTER theme.css so
+   these rules win. Brand tokens (coral/navy/fonts/radius) come from
+   settings_data.json via css-variables.liquid; this file adds the finer
+   React touches Impact's settings don't cover (card hover-lift, gradient
+   image wells, coral accents, section rhythm). Scoped, additive, no
+   structural Liquid changes — safe across Impact theme updates.
+   ============================================================================ */
+
+:root {
+  --ecom-coral: #E25D54;
+  --ecom-coral-hover: #C2413A;
+  --ecom-navy: #0B0F1A;
+  --ecom-bg: #F8FAFC;
+  --ecom-border: #F3F4F6;
+  --ecom-text: #111827;
+  --ecom-muted: #6B7280;
+}
+
+/* ---- Product cards: white card, gradient well, lift + shadow-xl on hover,
+        coral title on hover (mirrors React ProductCard.tsx) ------------------ */
+.product-card,
+.product-card__inner,
+.card--product {
+  border: 1px solid var(--ecom-border);
+  border-radius: 16px;
+  background: #fff;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+@media (pointer: fine) {
+  .product-card:hover,
+  .card--product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 8px 10px -6px rgba(0,0,0,.10);
+    border-color: rgba(226,93,84,.30);
+  }
+  .product-card:hover .product-card__media img,
+  .card--product:hover img {
+    transform: scale(1.05);
+  }
+}
+.product-card__media,
+.card--product .card__media {
+  background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+.product-card__media img,
+.card--product .card__media img {
+  transition: transform .5s ease;
+  object-fit: contain;
+  padding: 1.25rem;
+}
+.product-card__title:hover,
+.product-card a:hover .product-card__title,
+.card--product a:hover .card__heading {
+  color: var(--ecom-coral);
+}
+.product-card__vendor,
+.card--product .caption {
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(226,93,84,.80);
+}
+
+/* ---- Buttons: coral primary with the React hover (darker coral) ----------- */
+.button--primary,
+.button[data-variant="primary"],
+button[type="submit"].button {
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+@media (pointer: fine) {
+  .button--primary:hover,
+  .button[data-variant="primary"]:hover {
+    background-color: var(--ecom-coral-hover) !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ---- Links & accents → coral ---------------------------------------------- */
+a:not(.button):hover { color: var(--ecom-coral); }
+.price--on-sale .price-item--sale,
+.price__sale,
+.badge--sale,
+.product-on-sale-accent { color: var(--ecom-coral); }
+.badge,
+.product__badge {
+  background: var(--ecom-coral);
+  color: #fff;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: 700;
+}
+
+/* ---- Page background + section rhythm ------------------------------------- */
+body { background: var(--ecom-bg); }
+.shopify-section { scroll-margin-top: 90px; }
+
+/* ---- Eyebrows / small uppercase labels (React SectionTitle style) --------- */
+.section__subheading,
+.section-header__subheading,
+.subheading {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--ecom-coral);
+}
+
+/* ---- Cards / surfaces: soft border + rounding everywhere ------------------ */
+.card,
+.collection-card,
+.blog-card,
+.article-card {
+  border-radius: 16px;
+  border: 1px solid var(--ecom-border);
+}
+
+/* ---- Cart: coral checkout button, rounded summary ------------------------- */
+.cart__checkout-button,
+.cart__ctas .button,
+button[name="checkout"] {
+  background: var(--ecom-coral) !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+}
+@media (pointer: fine) {
+  .cart__checkout-button:hover,
+  button[name="checkout"]:hover { background: var(--ecom-coral-hover) !important; }
+}
+
+/* ---- Header: clean white, coral active nav (React ShopLayout) ------------- */
+.header { border-bottom: 1px solid var(--ecom-border); }
+.header__menu-item[aria-current],
+.header__menu-item.is-active,
+.header__inline-menu a:hover { color: var(--ecom-coral); }
+
+/* ---- Footer: dark navy (React footer) ------------------------------------ */
+.footer { background: var(--ecom-navy); }
+.footer a:hover { color: #fff; }
+
+/* ---- Inputs: rounded, coral focus ring ----------------------------------- */
+.field input,
+.field textarea,
+input[type="text"],
+input[type="email"],
+input[type="search"],
+textarea {
+  border-radius: 12px;
+}
+.field input:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid rgba(226,93,84,.20);
+  border-color: var(--ecom-coral);
+}
+
+/* ---- Bespoke custom-liquid brand sections (hero / trust bar / why-us) ----- */
+.ecom-section { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
+@media (min-width:768px){ .ecom-section{ padding:0 1.5rem; } }
+@media (min-width:1024px){ .ecom-section{ padding:0 2rem; } }
+
+.ecom-hero {
+  position: relative;
+  background: var(--ecom-navy);
+  color: #fff;
+  overflow: hidden;
+}
+.ecom-hero__glow {
+  position: absolute; top: 0; right: 0;
+  width: 500px; height: 500px;
+  background: rgba(226,93,84,.25);
+  border-radius: 9999px; filter: blur(160px);
+  pointer-events: none;
+}
+.ecom-hero__inner {
+  position: relative;
+  max-width: 80rem; margin: 0 auto;
+  padding: 4rem 1rem;
+}
+@media (min-width:1024px){ .ecom-hero__inner{ padding:6rem 2rem; } }
+.ecom-hero__eyebrow {
+  display:inline-flex; align-items:center; gap:.5rem;
+  border-radius:9999px;
+  background:rgba(226,93,84,.10);
+  border:1px solid rgba(226,93,84,.20);
+  color:var(--ecom-coral);
+  font-size:12px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.08em; padding:.375rem 1rem; margin-bottom:1.5rem;
+}
+.ecom-hero h1 {
+  font-size:2.25rem; font-weight:800; line-height:1.05;
+  letter-spacing:-.02em; margin:0 0 1.25rem;
+}
+@media (min-width:768px){ .ecom-hero h1{ font-size:3rem; } }
+@media (min-width:1024px){ .ecom-hero h1{ font-size:3.75rem; } }
+.ecom-hero__accent {
+  display:block;
+  background:linear-gradient(90deg,#E25D54,#F97316);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.ecom-hero p { font-size:1.125rem; color:rgba(255,255,255,.70); max-width:36rem; margin:0 0 1.75rem; }
+.ecom-btn {
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.875rem 1.5rem; border-radius:12px;
+  background:var(--ecom-coral); color:#fff; font-weight:700; font-size:.875rem;
+  text-decoration:none; box-shadow:0 10px 15px -3px rgba(226,93,84,.30);
+  transition:background .2s ease;
+}
+.ecom-btn:hover { background:var(--ecom-coral-hover); color:#fff; }
+
+.ecom-trustbar {
+  background:#fff; border-bottom:1px solid var(--ecom-border);
+}
+.ecom-trustbar__grid {
+  max-width:80rem; margin:0 auto; padding:1.25rem 1rem;
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1rem;
+}
+@media (min-width:768px){
+  .ecom-trustbar__grid{ grid-template-columns:repeat(4,1fr); padding:1.25rem 2rem; }
+}
+.ecom-trust-item { display:flex; align-items:center; gap:.75rem; }
+.ecom-trust-item__icon {
+  height:2.5rem; width:2.5rem; flex-shrink:0;
+  border-radius:12px; background:rgba(226,93,84,.10);
+  color:var(--ecom-coral);
+  display:flex; align-items:center; justify-content:center;
+}
+.ecom-trust-item__title { font-size:.875rem; font-weight:700; color:var(--ecom-text); }
+.ecom-trust-item__body  { font-size:.75rem; color:var(--ecom-muted); margin-top:.125rem; }
+
+.ecom-band {
+  position:relative; background:var(--ecom-navy); color:#fff; overflow:hidden;
+}
+.ecom-band__inner { position:relative; max-width:80rem; margin:0 auto; padding:3.5rem 1rem; }
+@media (min-width:1024px){ .ecom-band__inner{ padding:4rem 2rem; } }
+.ecom-band h2 { font-size:1.875rem; font-weight:800; line-height:1.1; letter-spacing:-.02em; margin:0; }
+@media (min-width:768px){ .ecom-band h2{ font-size:2.25rem; } }
+.ecom-tile {
+  padding:1.25rem; border-radius:16px;
+  background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10);
+}
+.ecom-tile__icon {
+  height:2.5rem; width:2.5rem; border-radius:12px;
+  background:rgba(226,93,84,.15); color:var(--ecom-coral);
+  display:flex; align-items:center; justify-content:center; margin-bottom:.75rem;
+}
+.ecom-tile__title { font-size:1rem; font-weight:800; color:#fff; }
+.ecom-tile__body  { font-size:.875rem; color:rgba(255,255,255,.60); margin-top:.375rem; line-height:1.6; }
